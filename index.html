@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cafe - Premium Coffee</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar navbar-expand navbar-dark custom-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">☕ Cozy Cafe</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#menu">Menu</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to Cozy Cafe</h1>
+            <p class="lead">Experience the real taste of authentic coffee in a peaceful environment.</p>
+            <a href="#menu" class="btn btn-custom btn-lg mt-3">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us Section -->
+    <section id="features" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5 fw-bold" style="color: #3E2723;">Why Choose Us?</h2>
+            <div class="row g-4">
+                
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/organic.jpeg" alt="Organic Beans" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2">🌱 Organic Beans</h3>
+                            <p class="mb-0">We source only the highest quality 100% Arabica coffee beans.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/pastari.jpeg" alt="Fresh Pastries" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2">🍰 Fresh Pastries</h3>
+                            <p class="mb-0">Baked daily, our cakes and desserts are always fresh and delicious.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/delivery.jpeg" alt="Fast Delivery" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2">🚀 Fast Delivery</h3>
+                            <p class="mb-0">Get your favorite hot coffee delivered directly to your doorstep.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Menu & Pricing Section -->
+    <section id="menu" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5 fw-bold" style="color: #3E2723;">Our Pricing Menu</h2>
+            <div class="row g-4">
+                
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="card-header bg-custom text-white py-3">
+                            <h4 class="my-0">Espresso</h4>
+                        </div>
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/your-espresso.jpeg" alt="Espresso" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$3.50</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Single or Double shot</li>
+                                <li>100% Arabica beans</li>
+                                <li>Strong and pure taste</li>
+                            </ul>
+                            <button type="button" class="w-100 btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="card-header bg-custom text-white py-3">
+                            <h4 class="my-0">Caffè Latte</h4>
+                        </div>
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/your-latte.jpeg" alt="Caffè Latte" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$4.50</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Fresh milk & thick foam</li>
+                                <li>Beautiful latte art</li>
+                                <li>Includes 1 free cookie</li>
+                            </ul>
+                            <button type="button" class="w-100 btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-custom fade-in-element">
+                        <div class="card-header bg-custom text-white py-3">
+                            <h4 class="my-0">Cappuccino</h4>
+                        </div>
+                        <div class="cafe-card-image">
+                            <a href="#"><img src="imge/your-cappuccino-image.jpeg" alt="Cappuccino" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$4.00</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Extra creamy milk foam</li>
+                                <li>Cinnamon or cocoa powder</li>
+                                <li>Perfect balanced flavor</li>
+                            </ul>
+                            <button type="button" class="w-100 btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="py-5 contact-section text-white">
+        <div class="container" style="max-width: 600px;">
+            <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+            <form class="p-4 border rounded bg-white shadow-sm">
+                <div class="mb-3">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Your Message</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

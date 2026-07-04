@@ -1,0 +1,122 @@
+/* Smooth scrolling transition without Javascript */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212121;
+    background-color: #FDFBF7; /* Cream/Milk background */
+    padding-top: 56px; /* Prevents navbar from covering content */
+}
+
+/* Navbar background color */
+.custom-nav {
+    background-color: #3E2723 !important; /* Dark brown */
+}
+
+/* Top cover section style */
+.hero-section {
+    background: linear-gradient(rgba(62, 39, 35, 0.75), rgba(62, 39, 35, 0.75)), 
+                url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200') no-repeat center center/cover;
+    height: 80vh;
+}
+
+/* دکمه‌های اصلی قهوه‌ای با عرض جمع‌وجور و استاندارد */
+.btn-custom {
+    background-color: #3E2723 !important;
+    color: #FDFBF7 !important;
+    border: 1px solid #3E2723 !important;
+    font-weight: bold;
+    height: 40px;
+    padding: 0 30px !important; /* ایجاد فاصله داخلی برای اندازه دکمه */
+    width: auto !important;     /* جلوگیری از دراز شدن دکمه */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.btn-custom:hover {
+    background-color: #5D4037 !important;
+    color: #FDFBF7 !important;
+}
+
+/* دکمه‌های داخل کارت‌ها (شفاف با کادر قهوه‌ای و عرض استاندارد) */
+.card.border-custom .btn, .btn-outline-custom {
+    background-color: transparent !important;
+    color: #3E2723 !important;
+    border: 1px solid #3E2723 !important;
+    font-weight: bold;
+    height: 40px;
+    padding: 0 30px !important; /* ایجاد فاصله داخلی برای اندازه دکمه */
+    width: auto !important;     /* به اندازه متن دکمه ست می‌شود */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;             /* وسط‌چین کردن دکمه در کارت */
+}
+.card.border-custom .btn:hover, .btn-outline-custom:hover {
+    background-color: #3E2723 !important;
+    color: #FDFBF7 !important;
+}
+
+/* یکسان‌سازی اندازه تمام عکس‌های منو و ویژگی‌ها */
+.cafe-card-image {
+    height: 200px;       /* ارتفاع عکس‌ها */
+    overflow: hidden;    /* زدن لبه‌های اضافی عکس */
+}
+
+.cafe-card-image img {
+    width: 100%;         
+    height: 100%;        
+    object-fit: cover;   /* برش هوشمند عکس بدون دفرمه شدن */
+}
+
+/* ۱. تعریف انیمیشن زوم و پدیدار شدن (مشترک برای همه کارت‌ها) */
+@keyframes fadeZoomInAll {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px); 
+        filter: blur(4px);                     
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); 
+        filter: blur(0);
+    }
+}
+
+/* ۲. اعمال انیمیشن روی تمام المان‌های دارای این کلاس */
+.fade-in-element {
+    animation: fadeZoomInAll 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* ۳. استایل تمام قهوه‌ای برای کارت‌های منو و ویژگی‌ها */
+.card.border-custom {
+    border: 2px solid #3E2723 !important;
+    background-color: #3E2723 !important; /* پس‌زمینه قهوه‌ای برای همه */
+    color: #FDFBF7 !important;            /* متن‌های روشن شیری برای همه */
+}
+
+/* هماهنگ کردن هدر کارت‌ها با بدنه قهوه‌ای */
+.bg-custom {
+    background-color: #3E2723 !important;
+}
+
+/* تغییر رنگ متن‌های فرعی داخل تمام کارت‌ها */
+.card.border-custom .text-muted, 
+.card.border-custom .pricing-card-title small {
+    color: #D7CCC8 !important; 
+}
+
+/* ۴. استایل پس‌زمینه تصویر محور بخش تماس با ما (مثل بخش اول سایت) */
+.contact-section {
+    background: linear-gradient(rgba(62, 39, 35, 0.75), rgba(62, 39, 35, 0.75)), 
+                url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* تغییر رنگ لیبل‌های داخل فرم تماس با ما به قهوه‌ای برای خوانایی بیشتر */
+.contact-section .form-label {
+    color: #3E2723 !important;
+    font-weight: 500;
+}
